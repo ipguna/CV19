@@ -21,5 +21,7 @@ Preprint. (Submitted)
 
 ## Sample of results
 
+    K = 8495	 r = 0.2000 	 alpha = 1.07654    t_m = 40.1200   RMSE = 71.122767
+
 ![Result with modified parameters](cv19caseID_Modified.png "Result with modified parameters")
 
