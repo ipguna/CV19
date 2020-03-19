@@ -70,10 +70,10 @@ modelname = 'Korean'
 
 # Parameters for the model, based on modified
 #K = 12950
-alpha = 1.076541410
+# alpha = 1.076541410
 #alpha = 0.91410
 #alpha = 1
-modelname = 'Modified'
+# modelname = 'Modified'
 
 # Total number of extra days for prediction
 extra_days = 3
