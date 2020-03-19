@@ -1,9 +1,3 @@
-<script src="//yihui.org/js/math-code.js"></script>
-<!-- Just one possible MathJax CDN below. You may use others. -->
-<script async
-  src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 # CV19
 
 Simple simulation on COVID-19 number of cases projection in Indonesia.
@@ -30,7 +24,7 @@ Data source: http://kcov.id/daftarpositif
 
 The mathematical model was taken from http://eprints.itb.ac.id/119/
 
-$ y = \dfrac{K}{ (1 + \alpha e^{-r(t-t_m)})^{1/\alpha}  } $
+\( y = \dfrac{K}{ (1 + \alpha e^{-r(t-t_m)})^{1/\alpha}  } \)
 
 \[1\] Nuraini, Nuning and Khairudin, Kamal and Apri, Mochamad
 Data dan Simulasi COVID-19 dipandang dari Pendekatan Model Matematika.
