@@ -6,9 +6,11 @@ Content:
 
 - [Data](#data)
 - [Paper reference](#paper-reference)
+- [Objective](#objective)
 - [Sample of results](#sample-of-results)
     + [Using original parameters](#using-original-parameters)
     + [Using modified parameters](#using-modified-parameters)
+- [Discussions](#discussions)
 
 ## Data
 
@@ -20,7 +22,9 @@ Data source: http://kcov.id/daftarpositif
 
 ## Paper reference
 
-Mathematical model was taken from http://eprints.itb.ac.id/119/
+The mathematical model was taken from http://eprints.itb.ac.id/119/
+
+$ y = \dfrac{K}{ (1 + \alpha e^{-r(t-t_m)})^{1/\alpha}  } $
 
 \[1\] Nuraini, Nuning and Khairudin, Kamal and Apri, Mochamad
 Data dan Simulasi COVID-19 dipandang dari Pendekatan Model Matematika.
@@ -60,3 +64,10 @@ in the graph.
 
 ![Result with modified parameters](cv19caseID_Modified_20200319001.png "Result with modified parameters")
 
+
+### Discussions
+
+Not really sure why the original parameters given in the paper failed to
+replicate the same results. There is, however, a possibility of using
+different dataset resource will result in discrepancies with the original
+results presented in \[1\].
