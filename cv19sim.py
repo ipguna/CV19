@@ -2,7 +2,7 @@
 
 ##################################################################
 #
-# Simple data plot of COVID-19 cases in Indonesia
+# Simple simulation on of COVID-19 cases in Indonesia
 #
 # Written by: Irwan Prasetya Gunawan
 # Data source: http://kcov.id/daftarpositif
@@ -106,6 +106,9 @@ RMSE = np.sqrt(mean)								# square root of MSE
 
 # Display/output the results of the analysis
 print("K = %2d\t r = %2.4f \t alpha = %2.5f \t t_m = %2.4f \t RMSE = %3.6f " % (K, r, alpha, t_m, RMSE))
+
+# Save output to csv file
+
 
 ##################################################################
 #
