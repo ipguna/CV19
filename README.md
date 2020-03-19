@@ -24,8 +24,6 @@ Data source: http://kcov.id/daftarpositif
 
 The mathematical model was taken from http://eprints.itb.ac.id/119/
 
-\( y = \dfrac{K}{ (1 + \alpha e^{-r(t-t_m)})^{1/\alpha}  } \)
-
 <img src="https://latex.codecogs.com/gif.latex?y&space;=&space;\dfrac{K}{&space;\left(1&space;&plus;&space;\alpha&space;e^{-r(t-t_m)}&space;\right)^{1/\alpha}&space;}" title="y = \dfrac{K}{ \left(1 + \alpha e^{-r(t-t_m)} \right)^{1/\alpha} }" />
 
 
@@ -74,3 +72,9 @@ Not really sure why the original parameters given in the paper failed to
 replicate the same results. There is, however, a possibility of using
 different dataset resource will result in discrepancies with the original
 results presented in \[1\].
+
+
+### Notes
+
+Mathematical equations was typeset in LaTeX using online renderer in
+[CodeDogs editor](https://www.codecogs.com/latex/eqneditor.php).
