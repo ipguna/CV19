@@ -26,6 +26,9 @@ The mathematical model was taken from http://eprints.itb.ac.id/119/
 
 \( y = \dfrac{K}{ (1 + \alpha e^{-r(t-t_m)})^{1/\alpha}  } \)
 
+<img src="https://latex.codecogs.com/gif.latex?y&space;=&space;\dfrac{K}{&space;\left(1&space;&plus;&space;\alpha&space;e^{-r(t-t_m)}&space;\right)^{1/\alpha}&space;}" title="y = \dfrac{K}{ \left(1 + \alpha e^{-r(t-t_m)} \right)^{1/\alpha} }" />
+
+
 \[1\] Nuraini, Nuning and Khairudin, Kamal and Apri, Mochamad
 Data dan Simulasi COVID-19 dipandang dari Pendekatan Model Matematika.
 Preprint. (Submitted)
