@@ -1,3 +1,19 @@
+#!/usr/bin/env python
+
+##################################################################
+#
+# Python script to fetch data on COVID-19 cases in Indonesia
+# from Google spreadsheet published in  http://kcov.id/daftarpositif
+#
+# Original data from the web was read, downloaded, and then saved as
+# csv file for further processing / simulation
+#
+# This script uses Google API to read and fetch data from the spreadsheet.
+# Original code was taken from:
+# https://thispointer.com/python-how-to-get-current-date-and-time-or-timestamp/
+#
+
+
 import pandas as pd
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow,Flow
