@@ -3,10 +3,9 @@
 Simple simulation on COVID-19 number of cases projection in Indonesia.
 
 Content:
-
-- [Data](#data)
-- [Paper reference](#paper-reference)
 - [Objective](#objective)
+- [Data](#data)
+- [Mathematical model](#mathematical-model)
 - [Sample of results](#sample-of-results)
     + [Using original parameters](#using-original-parameters)
     + [Using modified parameters](#using-modified-parameters)
