@@ -22,6 +22,17 @@ import matplotlib.pyplot as plt
 import math as m
 import numpy as np
 
+from datetime import datetime
+
+def gettimeStr():
+    dateTimeObj = datetime.now()
+    timestampstr = dateTimeObj.strftime("%Y%m%d_%H%M%S_%f")
+    return timestampstr
+
+# Get time for timestamp
+
+timestampStr = gettimeStr()
+
 ##################################################################
 #
 # Read data from file, convert the name columns
@@ -29,8 +40,8 @@ import numpy as np
 
 df = pd.read_csv('daily.csv',
 		header=0, 
-		names=['Date','New','Imported','Local','Accumulated','Treatment','Recovered','Rec (Acc)', 'Death', 'Death (Acc)', 'Death (rate)', 'Checked', 'Positif', 'Negatif', 'Process', 'Test (+)', 'Test (percent)', 'Test (daily)', 'Notes' ],
-		parse_dates=['Date'])
+		names=['Date','New','Imported','Local','Accumulated','Treatment','Recovered','Rec (Acc)', 'Death', 'Death (Acc)', 'Death (rate)', 'Checked', 'Positif', 'Negatif', 'Process', 'Test (+)', 'Test (percent)', 'Test (daily)', 'Notes' ]) #,
+		# parse_dates=['Date'])
 
 # print(df)	# check the parsed data by printing it out
 
@@ -70,10 +81,10 @@ modelname = 'Korean'
 
 # Parameters for the model, based on modified
 #K = 12950
-# alpha = 1.076541410
+alpha = 1.1134086541410
 #alpha = 0.91410
 #alpha = 1
-# modelname = 'Modified'
+modelname = 'Modified'
 
 # Total number of extra days for prediction
 extra_days = 3
@@ -105,10 +116,11 @@ mean = np.mean(ssq)									# mean of sum square error (MSE)
 RMSE = np.sqrt(mean)								# square root of MSE
 
 # Display/output the results of the analysis
-print("K = %2d\t r = %2.4f \t alpha = %2.5f \t t_m = %2.4f \t RMSE = %3.6f " % (K, r, alpha, t_m, RMSE))
+print("K = %2d\tr = %2.4f\talpha = %2.5f\tt_m = %2.4f\tRMSE = %3.6f\tTS:%s" % (K, r, alpha, t_m, RMSE, timestampStr))
 
-# Save output to csv file
-
+#
+# TODO: Save output to csv file
+#
 
 ##################################################################
 #
@@ -138,13 +150,14 @@ plt.plot(y_acc, color='black', label='Model (Acc)')
 plt.xlabel('Days')
 plt.ylabel('Population')
 plt.tick_params(axis='x', rotation=70)
-plt.title('nCOVID-19 cases in Indonesia')
+plt.title('nCOVID-19 cases in Indonesia, RMSE = {rmse:f}'.format(rmse=RMSE))
 plt.legend()
 
 # Save figure to file
 basename = 'cv19caseID_'
 filetype = '.png'
-filename = basename + modelname + filetype
+filename = basename + modelname + '_' + timestampStr + filetype
+
 # plt.savefig('cv19caseID.png', bbox_inches='tight')
 plt.savefig(filename, bbox_inches='tight')
 
